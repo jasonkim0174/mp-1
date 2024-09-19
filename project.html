@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!--Header starts here-->
+    <header>
+        <h1>Jason Kim</h1>
+        <p>Project | My Online Resume</p>
+    </header>
+
+    <!--Navigation starts here-->
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-button">Home</a></li>
+                <li><a href="education.html" class="nav-button">Education</a></li>
+                <li><a href="experiences.html" class="nav-button">Experiences</a></li>
+                <li><a href="skills.html" class="nav-button">Skills</a></li>
+                <li><a href="references.html" class="nav-button">References</a></li>
+                <li><a href="project.html" class="nav-button">Projects</a></li>
+            </ul>
+        </nav>
+
+    <!--Main starts here-->
+    <main>
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <div class="project-image">
+            <input type="number" id="first-number" placeholder="First Number">
+            <input type="number" id="second-number" placeholder="Second Number">
+            
+            
+            <div class="buttons">
+                <button onclick="calculate('+')">+</button>
+                <button onclick="calculate('-')">-</button>
+                <button onclick="calculate('*')">*</button>
+                <button onclick="calculate('/')">/</button>
+                <button onclick="calculate('**')">^</button>
+                <button onclick="clearInputs()">Clear</button>
+            </div>
+
+            <h3 id="output"></h3>
+        </div>
+    </main>
+
+   <!--Footer starts here-->
+   <footer>
+        <h3>
+            All Rights Reserved by Jason Kim <a href="credits.html" style="color: white">Credits</a> &copy;
+        </h3>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
